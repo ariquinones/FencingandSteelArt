@@ -1,0 +1,381 @@
+* {
+	box-sizing: border-box;
+	margin: 0; 
+}
+a:link {
+	text-decoration: none; 
+}
+a:visited {
+	color: inherit; 
+}
+body {
+	margin: 0; 
+	padding: 0; 
+}
+.topHeader {
+	width: 100%;
+	height: 50px;
+	background: rgb(235,181,26);
+	position: relative;
+}
+.companyInfo {
+	font-size: 15px;
+	color: white;
+	margin-left: 55%;
+}
+.topMenuBar {
+	width: 50%;
+	background: white;
+	padding: .75%;
+	text-align: center; 
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translate(-50%);
+	box-shadow: 1px 1px 1px black;
+}
+#logo {
+	width: 3.5%;
+	vertical-align: middle;
+}
+.navBar {
+	display: inline;
+}
+li {
+	display: inline;
+	padding: 5px;
+	font-size: 12px;
+	color: gray; 
+	margin: auto;
+}
+li:hover {
+	cursor: pointer; 
+	color: black; 
+	font-weight: bold; 
+}
+.imgContainer {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	/*background: url("../images/bardo1.jpg");*/
+}
+img {
+	width: 100%;
+	display: inline-block;
+}
+.introText {
+	position: absolute;
+	left: 50%;
+	top: 30%; 
+	font-size: 35px;
+	width: 40%;
+	color: white;
+	opacity: .9;  
+	font-weight: bold; 
+	transform: translateX(-50%);
+	text-align: center; 
+	text-shadow: 1px 1px 1px black;
+}
+.overlay {
+	background: black; 
+	opacity: .4; 
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	top: 50px; 
+	left: 0;  
+}
+.ctaButton {
+	border-radius: 2.5%;
+	color: white; 
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: transparent;
+	font-size: 25px; 
+	padding: 2%; 
+	border: 3px solid white;
+}
+.ctaButton:hover {
+	color: rgb(88,176,236); 
+	cursor: pointer;
+	border: 3px solid rgb(88,176,236);
+}
+.mainContainer {
+	width: 90%;
+	text-align: center; 
+	margin: 5% auto;
+}
+.project {
+	width: 25%; 
+	margin: 2%;
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	border-radius: 10px; 
+}
+.projectImage {
+	transform: rotate(180deg); 
+	width: 150%; 
+	vertical-align: middle;
+}
+.projectOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: .25; 
+}
+.projectDescription {
+	font-size: 25px;
+	color: white; 
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-shadow: 2px 2px 2px black;
+	visibility: hidden;
+}
+.project:hover {
+	cursor: pointer;
+}
+.project:hover > .projectDescription{
+	visibility: visible;
+	cursor: pointer; 
+}
+.projectButton {
+	border-radius: 5%;
+	color: rgb(88,176,236);
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: transparent;  
+	font-size: 15px; 
+	padding: 2%; 
+	border: 1px solid rgb(88,176,236);
+	visibility: hidden; 
+}
+.project:hover > .projectButton{
+	visibility: visible;
+	cursor: pointer; 
+}
+.projectButton:hover {
+	font-size: 16px;
+}
+.servicesContainer {
+	width: 75%;
+	text-align: center; 
+	margin: 3% auto;
+}
+h3 {
+	font-weight: bold;
+	font-size: 35px; 
+	font-style: italic;
+	color: rgb(88,176,236);
+	margin: 2.5%;
+}
+h2 {
+	font-size: 16px; 
+	margin-bottom: 2%; 
+}
+.service {
+	width: 30%; 
+	min-height: 300px;
+	border: 1px solid rgb(88,176,236);
+	display: inline-block;
+	padding: 5%; 
+	vertical-align: top;
+	margin: 1%; 
+}
+.learnMore {
+	font-style: oblique;
+	margin-top: 5%; 
+}
+/*Footer*/
+.footer {
+	width: 100%;
+	background: rgb(88,176,236);
+	margin: auto;
+	padding-top: 4%;
+	padding-bottom: 2%;
+	position: relative;
+	text-align: center;
+}
+.footer p {
+	margin-top: .5%;
+	color: white;
+	font-size: 8px;
+}
+.icon {
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	opacity: .8;
+}
+.footerMenu {
+	display: inline-block;
+}
+.footer ul li{
+	color: white;	
+}
+.emailSubscription {
+	position: absolute;
+	top: -30%;
+	left: 50%;
+	transform: translate(-50%);
+	width: 30%;
+	background: rgb(235,181,26);
+	text-align: center;
+	padding: 1%;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.emailSubscription h1 {
+	font-size: 20px;
+	color: white;
+}
+.emailSubscription p {
+	font-size: 10px;
+	color: white;
+}
+.emailSubscription input {
+	border: 1px solid rgb(235,181,26);
+	padding-left: 2px; 
+	display: inline;
+}
+.subscribeButton {
+	color: white;
+	font-size: 12px;
+	background: rgb(88,176,236);
+	border: 1px solid rgb(88,176,236);
+
+}
+@media only screen and (max-width: 670px) {
+	
+	.introText {
+		font-size: 30px;
+		width: 40%; 
+	}
+	.overlay {
+		opacity: 0; 
+	}
+	.ctaButton {
+		font-size: 15px; 
+	}
+	.mainContainer {
+		padding: 5px; 
+	}
+	.project {
+		display: block;
+		width: 80%; 
+		margin: auto;
+		margin-bottom: 2%; 
+
+	}
+	.service {
+		display: block;
+		width: 80%; 
+		margin: auto;
+		margin-bottom: 2%; 
+	}
+}
+
+/* WoodProject1 */
+.woodMainContainer {
+	margin: 4% auto;
+	width: 100%;
+	text-align: center;
+}
+.woodProjectDiv {
+	width: 35%;
+	height: 350px; 
+	overflow: hidden;
+	border: 2px solid black;
+	border-radius: 1%; 
+	display: inline-block;
+	margin: 1%;  
+}
+.woodProjectDiv:hover {
+	cursor: pointer;
+}
+.woodProjectPhoto {
+	width: 100%; 
+}
+@media only screen and (max-width: 670px) {
+	.woodProjectDiv {
+		display: block;
+		width: 80%;
+		margin: auto; 
+		margin-bottom: 2%; 
+	}
+}
+/*Contact Us*/
+.contactContainer {
+	width: 80%;
+	margin: 5% auto;
+	text-align: center;
+}
+.contactInput {
+	width: 45%;
+	height: 30px;
+	display: block;
+	padding-left: 5px; 
+	margin: 3% auto;
+}
+.contactUsButton {
+	color: white;
+	background: rgb(88,176,236);
+	border-radius: 2%;
+	border: 1px solid rgb(88, 176,236);
+	width: 30%;
+	height: 30px;
+}
+h1 {
+	font-size: 25px;
+	color: rgba(0, 0, 0, 0.8);
+}
+.messageTextBox {
+	min-height: 50px; 
+	min-width: 45%; 
+	resize: none;
+	text-align: top; 	
+}
+/*About Us*/
+.aboutUsContainer {
+	text-align: justify;
+	width: 65%;
+	margin: 5% auto;
+}
+.aboutUsContainer h1 {
+	font-style: oblique;
+	color: rgb(88, 176, 236);
+	margin-bottom: 2%;
+}
+.aboutUsContainer h2 {
+	margin-top: 2%;
+}
+
+
+/*Our Services*/
+.ourServicesContainer {
+	text-align: justify;
+	width: 65%;
+	margin: 5% auto;
+}
+.ourServicesContainer h1 {
+	font-style: oblique;
+	color: rgb(88, 176, 236);
+	margin-bottom: 2%;
+}
+.ourServicesContainer h2 {
+	margin-top: 2%;
+}
+
+
+
+
+
