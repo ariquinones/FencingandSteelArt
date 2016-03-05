@@ -59,6 +59,46 @@ li:hover {
 	overflow: hidden;
 	/*background: url("../images/bardo1.jpg");*/
 }
+.imgContainer-NonHomePage {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	/*background: url("../images/bardo1.jpg");*/
+}
+.overlay-NonHomePage {
+	background: black; 
+	opacity: .4; 
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	top: 50px; 
+	left: 0;  
+}
+.introText-NonHomePage {
+	position: absolute;
+	left: 50%;
+	top: 15%; 
+	font-size: 35px;
+	width: 40%;
+	color: white;
+	opacity: .9;  
+	font-weight: bold; 
+	transform: translateX(-50%);
+	text-align: center; 
+	text-shadow: 1px 1px 1px black;
+}
+.ctaButton-NonHomePage {
+	border-radius: 2.5%;
+	color: white; 
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: transparent;
+	font-size: 25px; 
+	padding: 2%; 
+	border: 3px solid white;
+}
 img {
 	width: 100%;
 	display: inline-block;
@@ -254,7 +294,7 @@ h2 {
 	border: 1px solid rgb(88,176,236);
 
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 700px) {
 	
 	.introText {
 		font-size: 30px;
@@ -278,9 +318,12 @@ h2 {
 	}
 	.service {
 		display: block;
-		width: 80%; 
+		width: 100%; 
 		margin: auto;
 		margin-bottom: 2%; 
+	}
+	.servicesContainer {
+		width: 90%;
 	}
 }
 
@@ -361,20 +404,6 @@ h1 {
 
 
 /*Our Services*/
-.ourServicesContainer {
-	text-align: justify;
-	width: 65%;
-	margin: 5% auto;
-}
-.ourServicesContainer h1 {
-	font-style: oblique;
-	color: rgb(88, 176, 236);
-	margin-bottom: 2%;
-}
-.ourServicesContainer h2 {
-	margin-top: 2%;
-}
-
 
 
 
