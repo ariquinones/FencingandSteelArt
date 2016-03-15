@@ -1,41 +1,47 @@
 console.log("hello")
-var projectImages = document.querySelector(".projectPhoto") 
+var projectImage = document.querySelector(".projectPhoto") 
 var body = document.querySelector("body")
-console.log(projectImages.src)
-var slideShow = function () {
-	var imagesArray = ['<img class="projectSlideShow" src="images/woodFence/woodFence1.jpg">',
-					   '<img class="projectSlideShow" src="images/woodFence/woodFence2.jpg">',
-					   '<img class="projectSlideShow" src="images/woodFence/woodFence3.jpg">',
-					   '<img class="projectSlideShow" src="images/woodFence/woodFence4.jpg">'
-	]
-	var numImage = 0
+var allImgs = document.querySelectorAll('.projectPhoto')
+// NodeList.prototype.map = Array.prototype.map
+// var allSources = allImgs.map(function(node) {return node.src})
+var allSourcesSlow = []
+for (var i = 0; i < allImgs.length; i++) {
+	allSourcesSlow.push(allImgs[i].src)
+}
+
+var slideShow = function (e) {
+	//console.log('clicked img ' + e.target)
+	var thisSource = e.target.src
+	var thisIndex = allSourcesSlow.indexOf(thisSource)
 	var nextImage = function () {
 		var imageToShow = ''
-		numImage = numImage + 1
-		if (numImage >= 4) {
-			numImage = 0
+		thisIndex = thisIndex + 1
+		if (thisIndex >= 4) {
+			thisIndex = 0
 		}
-		imageToShow = imagesArray[numImage]
-		liImage.innerHTML = imageToShow
-		
+		imageToShow = allSourcesSlow[thisIndex]
+		liImage.innerHTML = '<img class="projectSlideShow" src="' + allSourcesSlow[thisIndex] + '"></li>'
 	}
-	body.innerHTML +='<div class="pageOverlay"></div>'
-					 + '<li class="liImage"></li>' + '<button class="slideShowButton"><img class="javascriptIcon" src="images/arrow-right.svg"></button>\
-					<button class="exit"><img class="javascriptIcon" src="images/cancel.svg"></button>'
+	var slideShowDiv = document.createElement('div')
+	slideShowDiv.innerHTML = '<div class="pageOverlay"></div>' +
+						'<li class="liImage"><img class="projectSlideShow" src="' + allSourcesSlow[thisIndex] + '"></li>' + 
+					 	'<button class="slideShowButton"><img class="javascriptIcon" src="images/arrow-right.svg"></button>\
+						<button class="exit"><img class="javascriptIcon" src="images/cancel.svg"></button>'
+	body.appendChild(slideShowDiv)
 	var liImage = document.querySelector(".liImage")
-	liImage.innerHTML = imagesArray[numImage]
+	// liImage.innerHTML = imagesArray[numImage]
 	var button = document.querySelector(".slideShowButton") 	
 	var exitButton = document.querySelector(".exit")
 	var removeSlideShow = function() {
 		var pageOverlayDiv = document.querySelector(".pageOverlay")
-		body.removeChild(button)
-		body.removeChild(pageOverlayDiv)
-		body.removeChild(liImage)
-		body.removeChild(exitButton)
+		slideShowDiv.removeChild(button)
+		slideShowDiv.removeChild(pageOverlayDiv)
+		slideShowDiv.removeChild(liImage)
+		slideShowDiv.removeChild(exitButton)
 	}
 	button.addEventListener("click",nextImage)
 	exitButton.addEventListener("click",removeSlideShow)
-
 }
 
-projectImages.addEventListener("click",slideShow)
+projectImage.addEventListener("click",slideShow)
+
