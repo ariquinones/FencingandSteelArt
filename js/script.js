@@ -1,12 +1,12 @@
 console.log("hello")
-var projectImages = document.querySelectorAll(".woodProjectPhoto") 
+var projectImages = document.querySelector(".projectPhoto") 
 var body = document.querySelector("body")
-
+console.log(projectImages.src)
 var slideShow = function () {
-	var imagesArray = ['<img class="woodProjectSlideShow" src="images/patio1.jpg">',
-					   '<img class="woodProjectSlideShow" src="images/patio2.jpg">',
-					   '<img class="woodProjectSlideShow" src="images/patio3.jpg">',
-					   '<img class="woodProjectSlideShow" src="images/patio4.jpg">',
+	var imagesArray = ['<img class="projectSlideShow" src="images/woodFence/woodFence1.jpg">',
+					   '<img class="projectSlideShow" src="images/woodFence/woodFence2.jpg">',
+					   '<img class="projectSlideShow" src="images/woodFence/woodFence3.jpg">',
+					   '<img class="projectSlideShow" src="images/woodFence/woodFence4.jpg">'
 	]
 	var numImage = 0
 	var nextImage = function () {
@@ -38,10 +38,4 @@ var slideShow = function () {
 
 }
 
-
-var startSlideShow = function() {
-	for (var i = 0; i < projectImages.length; i++) {
-		projectImages[i].addEventListener("click",slideShow)
-	}
-}
-setTimeout(startSlideShow,100)
+projectImages.addEventListener("click",slideShow)
