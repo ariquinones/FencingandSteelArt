@@ -524,3 +524,91 @@ input.text {
 		width: 45%;
 	}
 }
+/*@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {*/
+@media screen and (max-device-width: 480px){
+
+	.companyInfo {
+	margin-left: 50%;
+	}
+	.imgContainer {
+		height: 400px;
+	}
+	.overlay {
+		height: 400px;
+	}
+	.introText {
+		width: 50%; 
+		top: 10%;
+	}
+	.ctaButton {
+		top: 20%;
+	}
+	.mainContainer {
+		padding: 1%;
+		width: 90%;
+		margin-bottom: 10%;
+	}
+	.project {
+		display: block;
+		width: 80%; 
+		min-height: 400px;
+		margin: 1% auto;
+	}
+	.service {
+		display: block;
+		width: 100%; 
+		margin: 1% auto;
+		min-height: 200px;
+	}
+	.servicesContainer {
+		width: 80%;
+	}
+	.footer ul {
+		margin-top: 2%;
+	}
+	.footer p {
+		font-size: .5em;
+	}
+	.emailSubscription {
+		width: 70%;
+		top: -30%;
+	}
+	.woodProjectDiv {
+		display: block;
+		width: 80%;
+		margin: auto; 
+		margin-bottom: 2%; 
+	}
+	.introText-NonHomePage {
+		top: 10%;
+		width: 55%;
+	}
+	.ctaButton-NonHomePage {
+		top: 20%;
+		font-size: 1.5em;
+	}
+	.aboutUsContainer {
+		margin: 15% auto;
+		width: 79%;
+	}
+	.servicesPageContainer {
+		margin-bottom: 10%;
+		width: 100%;
+	}
+	.contactContainer {
+		padding: 5%;
+		margin: 10% auto;
+		width: 90%;
+	}
+	.pageService {
+		width: 80%;
+	}
+	.singleServiceContainer {
+		width: 79%;
+	}
+	.singleServiceProject {
+		width: 45%;
+	}
+}
