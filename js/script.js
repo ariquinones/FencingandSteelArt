@@ -1,5 +1,5 @@
-console.log("hello")
-var projectImage = document.querySelector(".projectPhoto") 
+
+var projectImage = document.querySelectorAll(".projectPhoto") 
 var body = document.querySelector("body")
 var allImgs = document.querySelectorAll('.projectPhoto')
 // NodeList.prototype.map = Array.prototype.map
@@ -43,5 +43,18 @@ var slideShow = function (e) {
 	exitButton.addEventListener("click",removeSlideShow)
 }
 
-projectImage.addEventListener("click",slideShow)
+
+
+// Subscription Button 
+function enterName () {
+	console.log('click')
+	var inputEmail = document.querySelector('.emailInput')
+	inputEmail.value = ''
+}
+document.querySelector('.subscribeButton').addEventListener('click', enterName)
+
+for (var i=0; i < projectImage.length; i++) {
+	projectImage[i].addEventListener("click",slideShow)
+}
+
 
