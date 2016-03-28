@@ -22,7 +22,7 @@ body {
 .companyInfo {
 	font-size: 1em;
 	color: white;
-	margin-left: 55%;
+	margin-left: 50%;
 }
 .topMenuBar {
 	width: 60%;
@@ -57,15 +57,24 @@ body {
 }
 .imgContainer {
 	width: 100%;
-	height: 500px;
+	height: 60vh;
 	overflow: hidden;
-	/*background: url("../images/bardo1.jpg");*/
+}
+.overlay {
+	background: black; 
+	opacity: .4; 
+	width: 100%;
+	height: 60vh;
+	position: absolute;
+	top: 50px; 
+	left: 0;  
 }
 .imgContainer-NonHomePage {
 	width: 100%;
 	height: 400px;
 	overflow: hidden;
 	/*background: url("../images/bardo1.jpg");*/
+	/* background-image: url("../images/wroughIronFencingHeaderImg.jpg"); */
 }
 .overlay-NonHomePage {
 	background: black; 
@@ -123,20 +132,12 @@ img {
 	text-align: center; 
 	text-shadow: 1px 1px 1px black;
 }
-.overlay {
-	background: black; 
-	opacity: .4; 
-	width: 100%;
-	height: 500px;
-	position: absolute;
-	top: 50px; 
-	left: 0;  
-}
+
 .ctaButton {
 	border-radius: 2.5%;
 	color: white; 
 	position: absolute;
-	top: 55%;
+	top: 48%;
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: transparent;
@@ -339,7 +340,7 @@ h2 {
 
 /*Contact Us*/
 .contactContainer {
-	width: 50%;
+	width: 70%;
 	margin: 5% auto;
 	text-align: center;
 }
@@ -463,7 +464,7 @@ input.text {
 	}
 	.ctaButton {
 		font-size: 1.5em; 
-		top: 50%;
+		top: 45%;
 	}
 	.mainContainer {
 		padding: 1%;
@@ -524,10 +525,101 @@ input.text {
 		width: 45%;
 	}
 }
-/*@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {*/
-@media screen and (max-device-width: 480px){
+
+/* Ipad */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	.companyInfo {
+		margin-left: 45%;
+	}
+	.imgContainer {
+		height: 400px;
+	}
+	.imgContainer-NonHomePage {
+		height: 350px;
+	}
+	.overlay-NonHomePage {
+		height: 350px;
+	}
+	.overlay {
+		height: 400px;
+	}
+	.introText {
+		width: 50%; 
+		top: 10%;
+	}
+	.ctaButton {
+		top: 20%;
+	}
+	.mainContainer {
+		padding: 1%;
+		width: 90%;
+		margin-bottom: 10%;
+	}
+	.project {
+		display: block;
+		width: 80%; 
+		min-height: 400px;
+		margin: 1% auto;
+	}
+	.service {
+		display: block;
+		width: 100%; 
+		margin: 1% auto;
+		min-height: 200px;
+	}
+	.servicesContainer {
+		width: 80%;
+	}
+	.footer ul {
+		margin-top: 2%;
+	}
+	.footer p {
+		font-size: .5em;
+	}
+	.emailSubscription {
+		width: 70%;
+		top: -30%;
+	}
+	.woodProjectDiv {
+		display: block;
+		width: 80%;
+		margin: auto; 
+		margin-bottom: 2%; 
+	}
+	.introText-NonHomePage {
+		top: 10%;
+		width: 55%;
+	}
+	.ctaButton-NonHomePage {
+		top: 20%;
+		font-size: 1.5em;
+	}
+	.aboutUsContainer {
+		width: 79%;
+	}
+	.servicesPageContainer {
+		margin-bottom: 10%;
+		width: 100%;
+	}
+	.contactContainer {
+		padding: 5%;
+		margin: 0% auto;
+		width: 90%;
+	}
+	.pageService {
+		width: 80%;
+		min-height: 250px;
+	}
+	.singleServiceContainer {
+		width: 79%;
+	}
+	.singleServiceProject {
+		width: 45%;
+	}
+
+}
+
+@media screen and (max-device-width: 480px) {
 
 	.companyInfo {
 	margin-left: 50%;
@@ -586,7 +678,7 @@ and (max-device-width : 667px) {*/
 		width: 55%;
 	}
 	.ctaButton-NonHomePage {
-		top: 20%;
+		top: 18%;
 		font-size: 1.5em;
 	}
 	.aboutUsContainer {
