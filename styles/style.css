@@ -5,6 +5,7 @@
 }
 a {
 	text-decoration: none; 
+	color: inherit;
 }
 a:visited {
 	color: inherit; 
@@ -38,7 +39,6 @@ body {
 #logo {
 	width: 5%;
 	vertical-align: middle;
-	transform: rotateY(180deg);
 }
 .navBar {
 	display: inline;
