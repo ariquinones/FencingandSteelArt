@@ -112,9 +112,9 @@ body {
 	border: 3px solid white;
 }
 .ctaButton-NonHomePage:hover {
-	color: rgb(88,176,236); 
+	color: #E6A900;
 	cursor: pointer;
-	border: 3px solid rgb(88,176,236);
+	border: 3px solid #E6A900;
 }
 img {
 	width: 100%;
@@ -147,9 +147,9 @@ img {
 	border: 3px solid white;
 }
 .ctaButton:hover {
-	color: rgb(88,176,236); 
+	color: #E6A900; 
 	cursor: pointer;
-	border: 3px solid rgb(88,176,236);
+	border: 3px solid #E6A900;
 }
 /*Image Projects Container*/
 .mainContainer {
@@ -200,7 +200,7 @@ img {
 }
 .projectButton {
 	border-radius: 5%;
-	color: rgb(88,176,236);
+	color: white;
 	position: absolute;
 	top: 65%;
 	left: 50%;
@@ -208,8 +208,9 @@ img {
 	background-color: transparent;  
 	font-size: .9em; 
 	padding: 2%; 
-	border: 1px solid rgb(88,176,236);
+	border: 1px solid white;
 	visibility: hidden; 
+	opacity: .8;
 }
 .project:hover > .projectButton{
 	visibility: visible;
@@ -217,8 +218,7 @@ img {
 }
 .projectButton:hover {
 	font-size: 1em;
-	color: white;
-	border-color: white;
+	opacity: 1;
 }
 .servicesContainer {
 	width: 75%;
@@ -229,7 +229,7 @@ h3 {
 	font-weight: bold;
 	font-size: 3em; 
 	font-style: italic;
-	color: rgb(88,176,236);
+	color: #0D123A;
 	margin: 2.5%;
 }
 h2 {
@@ -239,7 +239,7 @@ h2 {
 .service {
 	width: 30%; 
 	min-height: 350px;
-	border: 1px solid rgb(88,176,236);
+	border: 1px solid #0D123A;
 	display: inline-block;
 	padding: 5%; 
 	vertical-align: top;
@@ -251,11 +251,13 @@ h2 {
 .learnMore {
 	font-style: oblique;
 	margin-top: 5%; 
+	border: 1px solid;
 }
 /*Footer*/
 .footer {
 	width: 100%;
-	background: rgb(88,176,236);
+/* 	background: rgb(88,176,236); */
+	background: #0D123A;
 	margin: auto;
 	padding-top: 5%;
 	padding-bottom: 2%;
@@ -280,6 +282,9 @@ h2 {
 }
 .footerMenuListItem {
 	display: inline;
+}
+.footerMenuListItem:hover {
+	text-decoration: underline;
 }
 .emailSubscription {
 	position: absolute;
@@ -310,11 +315,18 @@ h2 {
 .subscribeButton {
 	color: white;
 	font-size: 1em;
-	background: rgb(88,176,236);
+	background: #0D123A;
 	border: none;
 	padding: 1%;
     width: 30%;
     vertical-align: middle;
+}
+.subscribeButton:hover {
+	cursor: pointer;
+}
+.subscribeButton:focus {
+	outline: none;
+	opacity: .8;
 }
 
 /* WoodProject1 */
@@ -395,7 +407,7 @@ input.text {
 .pageService {
 	width: 35%; 
 	min-height: 500px;
-	border: 1px solid rgb(88,176,236);
+	border: 1px solid #304098;
 	display: inline-block;
 	padding: 2%; 
 	vertical-align: top;
@@ -433,7 +445,7 @@ input.text {
 	margin: 5% 2%;
 	overflow: hidden;
 	max-height: 300px;
-	border: 1px solid rgb(88,176,236);
+	border: 1px solid #304098;
 	border-radius: 5%;
 	display: inline-block;
 	position: relative;
