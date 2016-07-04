@@ -311,12 +311,14 @@ h2 {
 	padding: 2%;
 	height: 2.5em;
 	width: 45%;
+	border-radius: 3px;
 }
 .subscribeButton {
 	color: white;
 	font-size: 1em;
 	background: #0D123A;
-	border: none;
+	border: 1px solid #0D123A;
+	border-radius: 3px;
 	padding: 1%;
     width: 30%;
     vertical-align: middle;
@@ -455,11 +457,6 @@ input.text {
 	vertical-align: middle;
 }
 
-input.text, input.search, textarea.textarea {
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
 
 
 

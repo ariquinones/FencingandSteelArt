@@ -1,0 +1,31 @@
+input.text, input.search, textarea.textarea {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding-left: 5px;
+}
+.wufoo input.text:focus, .wufoo textarea.textarea:focus, .wufoo input.file:focus, .wufoo select.select:focus {
+	outline:  #0D123A;
+	border-color:  #0D123A;
+}
+form span.req {
+	color: #0D123A !important;
+}
+#Field18 {
+	margin-right: 2em;
+}
+#saveForm {
+	color: white;
+    font-size: 1em;
+    background: #0D123A;
+    border: 1px solid #0D123A;
+    padding: 1%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#saveForm:hover {
+	font-size: 1.25em;
+}
+#saveForm:focus {
+	background: rgb(235,181,26);
+}
