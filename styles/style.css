@@ -250,8 +250,11 @@ h2 {
 }
 .learnMore {
 	font-style: oblique;
-	margin-top: 5%; 
-	border: 1px solid;
+    margin-top: 5%;
+    border: 1px solid;
+    padding: 1%;
+    border-radius: 5px;
+    background: transparent;
 }
 /*Footer*/
 .footer {
