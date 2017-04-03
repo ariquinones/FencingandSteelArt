@@ -466,7 +466,34 @@ input.text {
 
 
 
+/* GALLERY */
+.thumb {
+	width: 200px; 
+}
+#feature {
+	width: 600px; 
+	float:right; 
+	/* margin: 10px; */
+}
+#feature img {
+	border: 4px solid #ccc;
+}
+.thumb {
+	border: 4px solid #ccc; 
+	/* margin: 4px; */
+}
+
+
+
 @media only screen and (max-width: 760px) {
+	/* GALLERY MOBILE */
+	#feature {
+		width: 100%;
+	}
+	.thumb {
+		width: 100px;
+	}
+
 	.companyInfo {
 	margin-left: 30%;
 	}
@@ -553,6 +580,14 @@ input.text {
 
 /* Ipad */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+		/* GALLERY MOBILE */
+	#feature {
+		width: 100%;
+	}
+	.thumb {
+		width: 100px;
+	}
+
 	.companyInfo {
 		margin-left: 45%;
 	}
@@ -645,6 +680,13 @@ input.text {
 }
 
 @media screen and (max-device-width: 480px) {
+	/* GALLERY MOBILE */
+	#feature {
+		width: 100%;
+	}
+	.thumb {
+		width: 100px;
+	}
 
 	.companyInfo {
 	margin-left: 50%;
@@ -729,3 +771,6 @@ input.text {
 		width: 45%;
 	}
 }
+
+
+
