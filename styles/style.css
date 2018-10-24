@@ -221,7 +221,7 @@ img {
 	opacity: 1;
 }
 .servicesContainer {
-	width: 75%;
+	width: 55%;
 	text-align: center; 
 	margin: 3% auto;
 }
@@ -237,7 +237,7 @@ h2 {
 	margin-bottom: 2%; 
 }
 .service {
-	width: 30%; 
+	width: 45%; 
 	min-height: 350px;
 	border: 1px solid #0D123A;
 	display: inline-block;
