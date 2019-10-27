@@ -54,7 +54,7 @@ body {
 .navBar li:hover {
 	cursor: pointer; 
 	color: black; 
-	font-weight: bold; 
+	/* font-weight: bold;  */
 }
 .imgContainer {
 	width: 100%;
@@ -125,7 +125,7 @@ img {
 	left: 50%;
 	top: 25%; 
 	font-size: 2em;
-	width: 40%;
+	width: 60%;
 	color: white;
 	opacity: .9;  
 	font-weight: bold; 
@@ -507,8 +507,7 @@ input.text {
 		height: 400px;
 	}
 	.introText {
-		font-size: 2em;
-		width: 50%; 
+		font-size: 2em; 
 		top: 20%;
 	}
 	.overlay {
@@ -603,8 +602,7 @@ input.text {
 	.overlay {
 		height: 400px;
 	}
-	.introText {
-		width: 50%; 
+	.introText { 
 		top: 10%;
 	}
 	.ctaButton {
@@ -681,6 +679,9 @@ input.text {
 
 @media screen and (max-device-width: 480px) {
 	/* GALLERY MOBILE */
+	.topMenuBar {
+		width: 80%;
+	}	
 	#feature {
 		width: 100%;
 	}
@@ -692,13 +693,12 @@ input.text {
 	margin-left: 50%;
 	}
 	.imgContainer {
-		height: 400px;
+		height: 500px;
 	}
 	.overlay {
-		height: 400px;
+		height: 500px;
 	}
-	.introText {
-		width: 50%; 
+	.introText { 
 		top: 10%;
 	}
 	.ctaButton {
