@@ -54,7 +54,6 @@ body {
 .navBar li:hover {
 	cursor: pointer; 
 	color: black; 
-	font-weight: bold; 
 }
 .imgContainer {
 	width: 100%;
@@ -125,7 +124,7 @@ img {
 	left: 50%;
 	top: 25%; 
 	font-size: 2em;
-	width: 40%;
+	width: 60%;
 	color: white;
 	opacity: .9;  
 	font-weight: bold; 
@@ -508,7 +507,6 @@ input.text {
 	}
 	.introText {
 		font-size: 2em;
-		width: 50%; 
 		top: 20%;
 	}
 	.overlay {
@@ -604,7 +602,6 @@ input.text {
 		height: 400px;
 	}
 	.introText {
-		width: 50%; 
 		top: 10%;
 	}
 	.ctaButton {
@@ -680,6 +677,12 @@ input.text {
 }
 
 @media screen and (max-device-width: 480px) {
+	.topMenuBar {
+		width: 80%;
+	}
+	.navBar li {
+	font-size: 1.2em;
+}
 	/* GALLERY MOBILE */
 	#feature {
 		width: 100%;
@@ -698,7 +701,7 @@ input.text {
 		height: 400px;
 	}
 	.introText {
-		width: 50%; 
+		
 		top: 10%;
 	}
 	.ctaButton {

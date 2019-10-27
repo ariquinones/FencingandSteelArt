@@ -51,7 +51,7 @@ function enterName () {
 	var inputEmail = document.querySelector('.emailInput')
 	inputEmail.value = ''
 }
-document.querySelector('.subscribeButton').addEventListener('click', enterName)
+//document.querySelector('.subscribeButton').addEventListener('click', enterName)
 
 for (var i=0; i < projectImage.length; i++) {
 	projectImage[i].addEventListener("click",slideShow)
