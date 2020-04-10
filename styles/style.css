@@ -26,6 +26,9 @@ body {
 	color: white;
 	margin-left: 50%;
 }
+.company-info-mobile {
+	display: none;
+}
 .topMenuBar {
 	width: 60%;
 	background: white;
@@ -494,7 +497,13 @@ input.text {
 	}
 
 	.companyInfo {
-	margin-left: 30%;
+		display: none;
+	}
+	.company-info-mobile {
+		display: block;
+		font-size: 1.25rem;
+		color: white;
+		margin: 10px auto;
 	}
 	.topMenuBar {
 	width: 80%;
@@ -525,7 +534,7 @@ input.text {
 		display: block;
 		width: 80%; 
 		margin: auto;
-		margin-bottom: 2%; 
+		margin-bottom: 5%; 
 	}
 	.service {
 		display: block;
@@ -533,6 +542,8 @@ input.text {
 		margin: auto;
 		margin-bottom: 2%; 
 		min-height: 200px;
+		padding: 10%;
+		font-size: 1.25rem;
 	}
 	.servicesContainer {
 		width: 80%;
@@ -562,6 +573,10 @@ input.text {
 	}
 	.servicesPageContainer {
 		margin-bottom: 10%;
+	}
+	.learnMore {
+		padding: 3% 7%;
+		font-size: 1.25rem;
 	}
 	.contactContainer {
 		padding: 5%;
